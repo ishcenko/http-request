@@ -15,7 +15,7 @@ export default class PokemonForm extends Component {
     event.preventDefault();
 
     if (this.state.pokemonName.trim() === '') {
-      toast('Wow so easy!');
+      toast.error('Wow so easy!');
       return;
     }
     this.props.onSubmit(this.state.pokemonName);
