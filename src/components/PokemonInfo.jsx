@@ -21,7 +21,6 @@ export default class PokemonInfo extends Component {
       setTimeout(() => {
         pokemonApi
           .fetchPokemon(nextName)
-          .fetchPokemon(nextName)
           .then(pokemon => this.setState({ pokemon, status: 'resolved' }))
           .catch(error => this.setState({ error, status: 'rejected' }));
       }, 5000);
